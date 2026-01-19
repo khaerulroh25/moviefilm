@@ -19,7 +19,7 @@ export default function Button({
     primary: "bg-[#3D4142] text-white hover:bg-gray-500 px-6 py-3",
     outline:
       "border border-gray-500 text-white hover:bg-white hover:text-black px-6 py-3",
-    icon: "w-10 h-10 p-0 bg-black/60 text-white hover:bg-black/80",
+    icon: "w-10 h-10 p-0 bg-[#22282A] text-white hover:bg-black/80",
     heroPrimary: "bg-[#0F1E93] text-white h-[45px] hover:bg-[#0C187A]",
     heroSecondary: "bg-[#22282A] text-white h-[45px] hover:bg-[#2A3032]",
   };

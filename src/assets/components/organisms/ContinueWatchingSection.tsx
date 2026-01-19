@@ -25,7 +25,7 @@ export default function ContinueWatchingSection() {
             top-1/2
             -translate-y-1/2
             z-10
-            bg-[#2F3334]
+            bg-[#22282A]
             hover:bg-black/80
           "
         >
