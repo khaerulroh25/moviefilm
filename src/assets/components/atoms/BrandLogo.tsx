@@ -3,18 +3,30 @@ import logo from "../../img/icons/logo.png";
 export default function BrandLogo() {
   return (
     <div className="flex items-center gap-2">
-      <img src={logo} alt="Chill Logo" className="w-6 h-6 md:w-10 md:h-10" />
+      <img
+        src={logo}
+        alt="Chill Logo"
+        className="w-[29px] h-[24px] md:w-[50px] md:h-[44px]"
+      />
 
       <span
         className="
+          w-[63px]
+          h-[24px]
+          md:w-[109px]
+          md:h-[44px]
           font-brand
-          text-[20px]
-          md:text-[48px]
+          font-normal
+          text-[28px]
+          md:text-[50px]
+          leading-[110%]
+          tracking-[0]
           text-white
-          leading-[55px]
-          h-[44px]
           flex
           items-center
+          justify-center
+          text-center
+          select-none
         "
       >
         CHILL

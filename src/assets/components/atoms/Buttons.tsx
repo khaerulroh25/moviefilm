@@ -13,7 +13,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-full text-sm font-semibold transition duration-200";
+    "inline-flex items-center justify-center rounded-full transition duration-200";
 
   const variants = {
     primary: "bg-[#3D4142] text-white hover:bg-gray-500 px-6 py-3",

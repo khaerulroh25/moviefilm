@@ -9,7 +9,10 @@ export default function Input({ className = "", ...props }: InputProps) {
     <input
       {...props}
       className={`
-        w-full
+        w-[260px]
+        h-[28px]
+        md:w-[449px]
+        md:h-[50px]
         rounded-full
         bg-transparent
         border
@@ -17,6 +20,8 @@ export default function Input({ className = "", ...props }: InputProps) {
         px-5
         py-3
         text-sm
+        placeholder:text-[10px]
+        md:placeholder:text-[16px]
         text-white
         placeholder-gray-400
         focus:outline-none

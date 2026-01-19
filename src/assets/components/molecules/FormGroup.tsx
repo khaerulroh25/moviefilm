@@ -12,8 +12,8 @@ export default function FormGroup({
   type = "text",
 }: FormGroupProps) {
   return (
-    <div className="flex flex-col gap-2">
-      <label className="text-sm text-white">{label}</label>
+    <div className="flex flex-col gap-[4px] md:gap-[6px]">
+      <label className="text-[10px] md:text-[18px] text-white">{label}</label>
       <Input type={type} placeholder={placeholder} />
     </div>
   );

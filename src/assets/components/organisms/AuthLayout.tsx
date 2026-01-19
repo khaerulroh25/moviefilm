@@ -11,13 +11,21 @@ export default function AuthLayout({
 }: AuthLayoutProps) {
   return (
     <div
-      className="relative min-h-screen w-full bg-cover bg-center flex items-center justify-center"
+      className="relative min-h-screen w-full bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 w-full flex justify-center px-4">
-        {children}
+      <div className="relative z-10 flex min-h-screen items-center justify-center px-4">
+        <div
+          className="
+          max-w-[360px]
+          min-h-[709px]
+          md:max-w-[1440px]
+          md:min-h-[1024px]"
+        >
+          {children}
+        </div>
       </div>
     </div>
   );

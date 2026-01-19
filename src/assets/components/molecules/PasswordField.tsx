@@ -11,8 +11,8 @@ export default function PasswordField({
   placeholder,
 }: PasswordFieldProps) {
   return (
-    <div className="flex flex-col gap-2">
-      <label className="font-sans font-normal text-[16px] leading-[22.4px] tracking-[0.2px] text-white">
+    <div className="flex flex-col gap-[4px] md:gap-[6px]">
+      <label className="font-sans font-normal text-[10px] md:text-[18px] leading-[22.4px] tracking-[0.2px] text-white">
         {label}
       </label>
 
@@ -23,7 +23,11 @@ export default function PasswordField({
           className="
             absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center pointer-events-none"
         >
-          <img src={eyeOffIcon} alt="Password hidden" className="w-5 h-5" />
+          <img
+            src={eyeOffIcon}
+            alt="Password hidden"
+            className="w-[11px] h-[10px] md:w-[18px] md:h-[15px]"
+          />
         </span>
       </div>
     </div>

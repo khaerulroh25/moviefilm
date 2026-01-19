@@ -8,29 +8,60 @@ export default function LoginCard() {
   return (
     <div
       className="
-        w-full
-        max-w-[529px]
-        rounded-2xl
-        bg-[#181A1CA6]
+        mt-[172px]
+        md:mt[181px]
+        w-[306px]
+        h-[420px]
+        md:w-[529px]
+        md:h-[663px]
+        rounded-[8px]
+        bg-[#181A1CD6]
         backdrop-blur-xl
-        p-10
+        p-[40px]
+        md:p-10
         text-white
         flex
         flex-col
-        gap-[37px]
+        gap-[20px]
+        md:gap-[37px]
         shadow-2xl
       "
     >
-      <div className="text-center">
-        <div className="flex justify-center mb-6">
-          <BrandLogo />
-        </div>
+      <div
+        className=" flex
+                      items-center
+                      justify-center
+                      w-[94px]
+                      h-[24px]
+                      md:w-[163px]
+                      md:h-[44px]
+                      gap-[4px]
+                      mx-auto
+                      "
+      >
+        <BrandLogo />
+      </div>
+      <div
+        className="w-[120px]
+                  h-[44px]
+                  md:w-[200px]
+                  md:h-[65px]
+                  flex
+                  flex-col
+                  items-center
+                  gap-[8px]
+                  mx-auto
+                  font-sans"
+      >
         <h3
           className="
-              font-sans
+              flex
+              items-center
+              justify-center
               font-bold
-              text-[32px]
-              leading-[35.2px]
+              text-[18px]
+              md:text-[32px]
+              leading-[110%]
               text-center
             "
         >
@@ -38,10 +69,10 @@ export default function LoginCard() {
         </h3>
         <p
           className="
-            font-sans
             font-normal
-            text-[16px]
-            leading-[22.4px]
+            text-[10px]
+            md:text-[16px]
+            leading-[140%]
             tracking-[0.2px]
             text-center
             text-white
@@ -51,14 +82,13 @@ export default function LoginCard() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-[6px]">
+      <div className="flex flex-col gap-[7px] md:gap-[12px]">
         <LoginForm />
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center text-[10px] md:text-[16px]">
           <p
             className="
             font-sans
             font-normal
-            text-[16px]
             leading-[22.4px]
             tracking-[0.2px]
             text-gray-300
@@ -69,8 +99,6 @@ export default function LoginCard() {
               to="/register"
               className="
             ml-1
-            font-medium
-            text-[16px]
             leading-[22.4px]
             tracking-[0.2px]
             text-white
@@ -84,7 +112,6 @@ export default function LoginCard() {
             className="
             font-sans
             font-normal
-            text-[16px]
             leading-[22.4px]
             tracking-[0.2px]
             text-gray-300
@@ -95,14 +122,25 @@ export default function LoginCard() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-2">
-        <Button>Masuk</Button>
+      <div className="flex flex-col gap-2 ">
+        <Button className="w-[258px] h-[30px] md:w-[449px] md:h-[50px] text-[10px] md:text-[16px]">
+          Masuk
+        </Button>
 
-        <div className="text-center text-sm text-gray-400">Atau</div>
+        <div className="text-center text-gray-400 text-[10px] md:text-[16px]">
+          Atau
+        </div>
 
-        <Button variant="outline">
-          <div className="flex items-center justify-center gap-5">
-            <img src={googleIcon} alt="Google" className="w-5 h-5" />
+        <Button
+          className="w-[258px] h-[30px] md:w-[449px] md:h-[50px] text-[10px] md:text-[16px]"
+          variant="outline"
+        >
+          <div className="flex items-center justify-center gap-[11px] md:gap-[20px]">
+            <img
+              src={googleIcon}
+              alt="Google"
+              className="w-[10px] h-[10px] md:w-[18px] md:h-[18px]"
+            />
             <span>Masuk dengan Google</span>
           </div>
         </Button>
